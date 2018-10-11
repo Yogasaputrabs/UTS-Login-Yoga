@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Welcome">
+
+    <TextView
+        android:text="Selamat Membaca"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView"
+        android:textAlignment="center"
+        android:textSize="37dp"
+        android:typeface="sans"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:id="@+id/text"
+        android:text="Halo Semua..
+Selamat datang di aplikasi Bukuku.com,
+disini kamu dapat menemukan buku yang kamu sukai secara online"
+        android:textColor="@color/cardview_dark_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_below="@id/text"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="-16dp"
+        android:src="@drawable/bukuku" />
+
+    <Button
+        android:text="Baca"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnExit" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignBottom="@+id/btnExit"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="440dp"
+        android:layout_marginBottom="70dp" />
+
+</RelativeLayout>
